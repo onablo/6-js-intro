@@ -118,7 +118,53 @@ console.log('Vaisiai: ' + 'braskes, ' + 'vynuoges, ' + 'kriauses, ' + 'obuoliai,
 
 
 console.log('---Kintamuju palyginimas---');
+console.log('-----------------1');
 
+const k = 15;
+const m = 10;
+
+if (k>m) { 
+    console.log(k, ' yra daugiau uz ', m);
+}
+if (m<k) {
+    console.log(m, ' yra maziau uz ', k); 
+}
+
+if (k<m) {
+    const kmDaugiau = `${k} yra daugiau ${m}`;
+    console.log(kmDaugiau);
+}
+else {
+    const kmMaziau = `${k} yra maziau ${m}`;
+    console.log(kmMaziau);
+}
+
+const q =12;
+const z =27;
+
+if (q == z) {
+    console.log('Taip');
+}
+else {
+    console.log('Ne');
+}
+
+if (q>=z ) {
+    console.log('Taip');
+}
+else {
+    console.log('Ne');
+
+}
+if (q<=z ) {
+    console.log('Taip');
+}
+else {
+    console.log('Ne');
+}
+
+
+console.log('-----------------3');
 
 const OroTemperatura =  [6, 12, 2, 5, 9, 11];
 const OroMatavimokiekis = OroTemperatura.length;
@@ -128,7 +174,7 @@ const OroTemperatura1 =  [5, 25, 17, 19, 11];
 const OroMatavimokiekis1 = OroTemperatura1.length;
 console.log(OroMatavimokiekis1); 
 
-console.log('------------------');
+console.log('----------------4');
 
 const tekstas1 =  'Saule sviecia';
 const tekstas2 =  'Lietus lyja visa diena';
@@ -174,7 +220,7 @@ if (Tekstas1ilgis >= Tekstas2ilgis) {
     const Tekstas2ilgisdydly = `${Tekstas1ilgis} yra mazesnis arba lygus ${Tekstas2ilgis}`
     console.log(Tekstas2ilgisdydly);
 
-    console.log('------------------');
+    console.log('-----------------5');
 }
 
 const incom1day = [12, 15, 11, 17, 12, 7];
