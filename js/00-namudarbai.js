@@ -256,3 +256,33 @@ if (incom1daysum >= incom2daysum) {
     const incom2daysummazly = `${incom1daysum} yra maziau arba lygu ${incom2daysum} `
     console.log(incom2daysummazly);
 }
+
+
+console.log('------------------');
+
+console.log('CIKLO for PANAUDOJIMAS');
+console.log('----------------------');
+
+
+
+console.log('---b');
+
+
+const numb = [0, 1, 2, 3, 4];
+let sums = 0;
+
+for (let i = 0; i < numb.length; i++) {
+    const numbers = numb[i];
+    sums += numbers;
+    console.log(sums);
+}
+
+console.log('---c');
+
+
+const title = 'Best friend';
+
+for (let i = 0; i < title.length; ++i) {
+    const letter = title[i];
+    console.log(letter);
+}

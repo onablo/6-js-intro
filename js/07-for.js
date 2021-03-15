@@ -18,6 +18,8 @@ zodis += abc[abcIndex++];
 
 console.log(zodis);
 
+console.log('--------------');
+
 
 for (let i=0; i < 5; i++) {
     console.log(i);
@@ -74,5 +76,10 @@ for (let i = 0; i < sakinys.length; i++) {
     const simbolis = sakinys[i];
     console.log(simbolis);
 }
+
+
+
+console.log('--------------');
+
 
 
