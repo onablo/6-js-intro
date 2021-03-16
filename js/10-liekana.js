@@ -20,5 +20,7 @@ const ats = `Skaiciu intervale tarp ${nuo} ir ${iki} besidalijanciu be liekanos 
 console.log(ats);
 
 
+// 15- 20      (20-15) /5+1    Z(iki-nuo) / daliklis + 1
+//i++, i+=daliklis
 
 console.log('---------------------------');
