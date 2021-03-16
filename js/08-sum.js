@@ -6,10 +6,10 @@ const nuo = 0;
 const iki = 4;
 let sum = 0;
  
-for (let i=0; i < 5; i++) {
+for (let i=0; i <=4; i++) {
     console.log(i);
 }
-for (let i=0; i < 5; i++) {
+for (let i=0; i <=4; i++) {
     sum += i;
 }
 const ats = 'Intervale nuo ' + nuo + ' iki ' + iki + ' suma yra ' + sum  + '.' ;
@@ -20,9 +20,9 @@ console.log('--------');
 
 const nuo1 = 10;
 const iki1 = 14;
-let sum1 = 10;
+let sum1 = 0;
 
-for (let i=10; i < 15; i++)
+for (let i=10; i <= 14; i++)
     sum1 +=i;
 const ats1 = 'Intervale nuo ' + nuo1 + ' iki ' + iki1 + ' suma yra ' + sum1  + '.' ;
 
@@ -35,10 +35,10 @@ const nuo2 = 0;
 const iki2 = 100;
 let sum2 = 0;
 
-for (let i=1; i<=100; i++) {
+for (let i=0; i<=100; i++) {
     sum2+=i;
 }
-const ats2 = 'Intervale nuo ' + nuo2 + ' iki ' + iki2 + ' suma yra ' + sum2  + '.' ;
+const ats2 = `Intervale nuo  ${nuo2}  iki   ${iki2}  suma yra  ${sum2}.` ;
 
 console.log( ats2 );
 
@@ -47,12 +47,12 @@ console.log('--------');
 
 const nuo3 = 574;
 const iki3 = 815;
-let sum3 = 574;
+let sum3 = 0;
 
 for(let i=574; i<=815; i++) {
     sum3+=i;
 }
-const ats3 = 'Intervale nuo ' + nuo3 + ' iki ' + iki3 + ' suma yra ' + sum3  + '.' ;
+const ats3 = `Intervale nuo ${nuo3} iki ${iki3} suma yra ${sum3}.`;
 
 console.log( ats3 );
 
@@ -60,26 +60,26 @@ console.log('--------');
 
 
 const nuo4 = -70;
-const iki4 = -30;
-let sum4 = -70;
+const iki4 = 30;
+let sum4 = 0;
 
-for(let i=-70; i<=-30; i++) {
+for(let i=-70; i<=30; i++) {
     sum4+=i;
 }
-const ats4 ='Intervale nuo ' + nuo4 + ' iki ' + iki4 + ' suma yra ' + sum4  + '.' ;
+const ats4 =`Intervale nuo ${nuo4} iki ${iki4} suma yra ${sum4}` ;
 
 console.log( ats4 );
 
 console.log('--------'); 
 
 const nuo5 = -50;
-const iki5 = -50;
-let sum5 = -50;
+const iki5 = 50;
+let sum5 = 0;
 
-for(let i=-50; i<=-50; i++) {
+for(let i=-50; i<=50; i++) {
     sum5+=i;
 }
-const ats5 ='Intervale nuo ' + nuo5 + ' iki ' + iki5 + ' suma yra ' + sum5  + '.' ;
+const ats5 =`Intervale nuo ${nuo5} iki ${iki5} suma yra ${sum5}`;
 
 console.log( ats5 );
 
@@ -93,8 +93,27 @@ let sum6 = 0;
 for(let i=0; i<=0; i++) {
     sum6+=i;
 }
-const ats6 ='Intervale nuo ' + nuo6 + ' iki ' + iki6 + ' suma yra ' + sum6  + '.' ;
+const ats6 =`Intervale nuo ${nuo6} iki ${iki6} suma yra ${sum6}.` ;
 
 console.log( ats6 );
 
 console.log('--------'); 
+
+console.log('--------'); 
+
+
+const nuo7 = 10;
+const iki7 = 0;
+let sum7 = 0;
+
+if (nuo7 <=iki7) {
+    for (let i = nuo7; i <=iki7; i++) {
+        sum7 += i;
+    }
+} else {
+    for(let i=iki7; i<=nuo7; i++) {
+        sum7 += i;
+    }
+}
+const ats7 =`Intervale nuo ${nuo7} iki ${iki7} suma yra ${sum7}.` ;
+console.log( ats7 );
