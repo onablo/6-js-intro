@@ -1,44 +1,8 @@
 console.log('--------------------------');
-/*
-function daugyba(a, b) {
+
     // parametru validacija
     //jeigu a yra ne skaicius, grazinti klaidos pranesima
-   
-
-    if (typeof a !== 'number') {
-        return 'Pirmasis parametras turi buti skaiciaus tipo';
-    }
-    if (isNaN(a)) {
-        return 'Pirmasis parametras turi buti skaiciaus tipo';
-    }
-    if (a === Infinity) {
-        return 'Pirmasis parametras turi buti skaiciaus tipo';
-    }
-    if (a === -Infinity) {
-        return 'Pirmasis parametras turi buti skaiciaus tipo';
-    }
-
-    // jeigu b yra ne skaicius, grazinti klaidos pranesima
-    if (typeof b !== 'number') {
-        return 'Antrasis parametras turi buti skaiciaus tipo';
-    }
-    if (isNaN(b)) {
-        return 'Antrasis parametras turi buti skaiciaus tipo';
-    }
-    if (b === Infinity) {
-        return 'Pirmasis parametras turi buti skaiciaus tipo';
-    }
-    if (b === -Infinity) {
-        return 'Pirmasis parametras turi buti skaiciaus tipo';
-    }
-     // logika
-    const rez = a * b;
-
-    // rezultato grazinimas
-    return rez;
-}
-    */
-    
+       
 function daugyba(a, b) {
     if (typeof a !== 'number') {
         return 'Pirmasis parametras turi buti skaiciaus tipo ';
@@ -56,9 +20,7 @@ function daugyba(a, b) {
     const rez = a * b;
 
     return rez;
-}    
-
-
+}  
 console.log(daugyba('trys', 'penki'));
 console.log(daugyba(5, 'sesi'));
 console.log(daugyba('trys', 7));
@@ -104,6 +66,45 @@ console.log(daugyba(3, 5), '->', 15);
 console.log(daugyba( 5, 8), ['nhytt']);
 
 
-
 console.log('--------------------------');
 
+/*
+function daugyba(a, b) {
+    // parametru validacija
+    //jeigu a yra ne skaicius, grazinti klaidos pranesima
+   
+    if (typeof a !== 'number') {
+        return 'Pirmasis parametras turi buti skaiciaus tipo';
+    }
+    if (isNaN(a)) {
+        return 'Pirmasis parametras turi buti skaiciaus tipo';
+    }
+    if (a === Infinity) {
+        return 'Pirmasis parametras turi buti skaiciaus tipo';
+    }
+    if (a === -Infinity) {
+        return 'Pirmasis parametras turi buti skaiciaus tipo';
+    }
+
+    // jeigu b yra ne skaicius, grazinti klaidos pranesima
+    if (typeof b !== 'number') {
+        return 'Antrasis parametras turi buti skaiciaus tipo';
+    }
+    if (isNaN(b)) {
+        return 'Antrasis parametras turi buti skaiciaus tipo';
+    }
+    if (b === Infinity) {
+        return 'Pirmasis parametras turi buti skaiciaus tipo';
+    }
+    if (b === -Infinity) {
+        return 'Pirmasis parametras turi buti skaiciaus tipo';
+    }
+     // logika
+    const rez = a * b;
+
+    // rezultato grazinimas
+    return rez;
+}
+    */
+
+/*
