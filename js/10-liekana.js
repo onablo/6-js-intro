@@ -24,3 +24,15 @@ console.log(ats);
 //i++, i+=daliklis
 
 console.log('---------------------------');
+
+
+const nuo1 = 0;
+const iki1 = 11;
+const daliklis1 = 3;
+let count1 = (iki1 - nuo1) / 1% daliklis + 1;        
+
+const ats1 = `Skaiciu intervale tarp ${nuo1} ir ${iki1} besidalijanciu be liekanos is ${daliklis1} yra ${count1} vienetai.`          
+
+console.log(ats1);
+
+
