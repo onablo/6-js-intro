@@ -20,8 +20,14 @@ console.log(bigNum(false));
 console.log(bigNum(undefined));
 console.log(bigNum());
 console.log(bigNum(bigNum));
+console.log(bigNum(null));
+
+//console.log(bigNum({}));
+//console.log(bigNum([]));
+
+//console.log(bigNum([1]), '->', );
 
 
 
 
-
+ 
