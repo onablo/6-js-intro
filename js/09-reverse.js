@@ -38,3 +38,27 @@ o -> 5
 //    console.log(text, '->', reverse);
 
 console.log('--------------');
+
+
+
+function reverseString(text) {
+    let reverse = '';
+
+    for (let i = 0; i < text.length; i++) {
+        reverse = text[i] + reverse;
+    }
+
+    console.log(text, '->', reverse);
+}
+
+
+const zodis1 = 'abcdef';
+reverseString(zodis1);
+
+reverseString('Lietuva');
+reverseString('sedek uzu kedes');
+reverseString('sula');
+reverseString('samanos');
+reverseString('uoga');
+
+

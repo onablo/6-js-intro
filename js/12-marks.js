@@ -31,7 +31,10 @@ for (let i = 0; i < mokykla.length; i++) {
     const mokinys = mokykla[i];  // console.log(mokykla[i]);
     const name = mokinys[0];   //console.log(mokykla[i][0]);
     const marks = mokinys[1];  // console.log(mokykla[i][1]); 
+    
     pazymiuVidurkis(name, marks);
 }
+  // arba taip: pazymiuVidurkis(mokykla[i][0], mokykla[i][1]);
+
 
 console.log('--------------------------');
