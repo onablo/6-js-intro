@@ -1,16 +1,24 @@
 function bigNum(list) {
     // input validation
-    if (typeof list !== "object") {
-        return 'ERROR: netinkamas tipas, turi buti array (sarasas)'; 
+    if (!Array.isArray(list)) {
+        return 'ERROR: netinkamas tipas, turi buti array (sarasas)';
     }
-    if (list ===null) {
-        return 'ERROR: netinkama reiksme (null)';  
+    if (list.length === 0) {
+        return 'Error: array is empty';
     }
- 
+  
     // logic
+    let biggest = list[0];
+
+    for (let i = 1; i < list.length; i++ ) {
+        const number = list[i];
+        if (number > biggest) {
+            biggest = number;
+        }
+    }
 
     // result
-    return 0;
+    return biggest;
 }
 
 console.log(bigNum('pomidoras'));
@@ -21,13 +29,15 @@ console.log(bigNum(undefined));
 console.log(bigNum());
 console.log(bigNum(bigNum));
 console.log(bigNum(null));
+console.log(bigNum({}));
+console.log(bigNum([]));
 
-//console.log(bigNum({}));
-//console.log(bigNum([]));
-
-//console.log(bigNum([1]), '->', );
-
-
+console.log(bigNum([1]), '->', 1);
+console.log(bigNum([1, 2, 3]), '->', 3);
+console.log(bigNum([-5, 78, 14, 0, 18]), '->', 78);
+console.log(bigNum([69, 69, 69, 69, 66]), '->', 69);
+console.log(bigNum([-1, -2, -3, -4, -5, -6, -7, -8]), '->', -1);
+console.log(bigNum([-15, -32, -3, -34, -5, -6, -7, -8]), '->', -3);
 
 
  
