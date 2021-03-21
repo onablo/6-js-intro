@@ -7,3 +7,12 @@ console.log(makeNegative(9), '->', -9);
 console.log(makeNegative(-5), '->', -5);
 console.log(makeNegative(3.14), '->', -3.14);
 console.log(makeNegative(0), '->', 0);
+
+/* kitas variantas 
+    if (num <= 0) {
+        return num;
+    } else {
+        return num * -1;   arba return -num;
+    }
+}
+*/

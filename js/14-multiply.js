@@ -8,7 +8,9 @@ function daugyba(a, b) {
         return 'Pirmasis parametras turi buti skaiciaus tipo ';
     }
     if (isNaN(a) || a === Infinity || a === -Infinity ) {
-         return `Pirmasis parametras turi buti normalus skaicius ir negali buti ${a} `;
+         return `Pirmasis parametras turi buti normalus skaicius ir negali buti ${a} `;     
+    // kitas variantas: if(!isFinite(a)) { return.... }
+    
     }
 
     if (typeof b !== 'number') {
@@ -107,4 +109,17 @@ function daugyba(a, b) {
 }
     */
 
-/*
+console.log('---------------');
+ console.log('Namu darbai');
+ console.log('Funkcija "daugyba');
+
+function daugyba(d, e) {
+    const rez1 = d * e;
+    return rez1;
+}
+
+console.log(daugyba(11, 7), '->', 77);
+console.log(daugyba(5, 7), '->', 35);
+console.log(daugyba(11, 5), '->', 55);
+
+

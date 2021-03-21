@@ -16,3 +16,4 @@ function tusciaFunkcija() {
      
 }
  console.log(tusciaFunkcija());
+

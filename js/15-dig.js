@@ -1,5 +1,6 @@
 function digits(skaicius) {
     // input validation
+    
     if (typeof skaicius !== 'number') {
         return 'ERROR: turi buti skaiciaus tipas';
     }
@@ -11,11 +12,15 @@ function digits(skaicius) {
     const tekstinisSkaicius = '' + skaicius;
     let skaitmenuKiekis = tekstinisSkaicius.length;
 
-    // jei skaicius yra neigiamas, tai sumaziname 1 vienetu
-    if (skaicius < 0) {
+    // jei skaicius turi desimtaine dali, tai sumaziname 1 vienetu
+    if (skaicius % 1 !== 0) {
         skaitmenuKiekis--;
     } 
-
+    
+    //jei skaicius yra neigiamas, tai sumaziname 1 vienetu
+    if (skaicius < 0) {
+        skaitmenuKiekis--;
+    }    
     // return result
     return skaitmenuKiekis;
 }
@@ -29,12 +34,19 @@ function digits(skaicius) {
     console.log(digits(undefined));
     console.log(digits(null));
     console.log(digits([]));
-    console.log(digits(Infinity));
     console.log(digits(''));
     console.log(digits([5612]));
     console.log(digits(digits));
 
-    console.log(digits(digits));
-    console.log(digits(digits));
-    console.log(digits(digits));
-    console.log(digits(digits));
+    console.log(digits(5), '->',1);
+    console.log(digits(781), '->', 3);
+    console.log(digits(37060123456), '->', 11);
+    console.log(digits(112233445577), '->', 12);
+    console.log(digits(3.1425), '->',5);
+    console.log(digits(-456), '->',3);
+    console.log(digits(-3.1415), '->',5);
+
+    console.log('Koks sprendimas norint rasti standartines skaiciaus israiskos "turimu" skaitmenu kieki');
+    console.log(digits(10000000000000000000000000000000000000000000000000), '->',30);
+    console.log(digits(100000000000000000000000000000), '->',30);
+    console.log(digits(0.00000000000000000000000000001), '->',30);

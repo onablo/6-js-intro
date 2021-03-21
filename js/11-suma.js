@@ -29,5 +29,3 @@ labas('Petras', 88, 'Vilniuje');
 labas('Maryte', 66, 'Alytuje');
 labas('Vanda', 52, 'Varenoje');
 
-
-console.log('------------------------');
