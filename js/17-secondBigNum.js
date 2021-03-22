@@ -1,9 +1,5 @@
 /*
 - antras pagal diduma skaicius sarase
-
-- rekursija? rasti didziausia skaiciu bet kokio gilumo sarase
-    - kas vyriausias gimineje?
-    - kas turi daugiausia vaiku gimineje
 */
 
 

@@ -1,8 +1,13 @@
 /*
+- rekursija? rasti didziausia skaiciu bet kokio gilumo sarase
+    - kas vyriausias gimineje?
+    - kas turi daugiausia vaiku gimineje
+
+    
 Gimines medyje reikia rasti kas buvo/yra vyriausias?
 */
 
-function oldest (giminesSaka) {
+function oldest (asmuo) {
     let biggestAge = asmuo.age;
     let childAge = 0;
 
@@ -18,12 +23,64 @@ function oldest (giminesSaka) {
         }    
     }    
 
-
-
     return biggestAge;
 }
 
-function oldestWithName(asmuo) {
+
+
+const gimine1 = {
+    name: 'Petras',
+    age: 90,
+    children: [
+        {
+            name: 'Maryte',
+            age:45,
+            children: [ 
+                { 
+                    name: 'Onute',
+                    age: 70
+                },
+                {
+                    name: 'Elvyra',
+                    age: 66
+                },
+            ]
+        },
+        {
+            name: 'Jonas',
+            age: 43,
+            children: [
+                {
+                    name : 'Alexas',
+                    age: 100,
+                    children: [
+                        { 
+                            name: 'Laimute',
+                            age: 25,
+                        },
+                        { 
+                            name: 'Tomas',
+                            age: 32,        
+                        }
+                    ]
+                },    
+                {         
+                    name : 'Gabriele',
+                    age: 27
+                },
+            ]
+        },
+    ]
+}
+const vyriausias = oldest(gimine1);
+console.log(vyriausias);
+ 
+//const vyriausiasAsmuo = oldestWithName(gimine1);
+
+
+
+
+/*function oldestWithName(asmuo) {
     let oldestName = asmuo.name;
     let biggestAge = asmuo.age;
 
@@ -37,55 +94,4 @@ function oldestWithName(asmuo) {
         biggestAge = oldestChild.age;
         oldestName = oldestChild.name;
        }
-    }
-}
-
-    return {
-        name: oldestName,
-        age: biggestAge
-    };
-}
-
-const gimine1 = {
-    name: 'Petras',
-    age: 40,
-    children: [
-        {
-        name: 'Maryte',
-        age:45,
-        children: [ 
-        { 
-            name: 'Onute',
-            age: 70
-        },
-        {
-            name: 'Elvyra',
-            age: 66
-        },
-    ]
-},
-{
-    name: 'Jonas',
-    age: 43,
-    children: [
-        {
-            name : Alexas,
-            age: 20,
-            children: []
-        },
-        { 
-            name : 'Aleksas',
-            age: 88
-        }
-        {      
-            name : 'Gabriele',
-            age: 27
-        },
-            
-    ]
-
-}
-const vyriausias = oldest(gimine1);
-console.log(vyriausias);
- 
-const vyriausiasAsmuo = oldestWithName(gimine1);
+    */
