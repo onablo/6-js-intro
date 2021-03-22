@@ -1,8 +1,9 @@
 /*
-
-
-
+- rekursija? rasti didziausia skaiciu bet kokio gilumo sarase
+    - kas vyriausias gimineje?
+    - kas turi daugiausia vaiku gimineje
 */
+
 function recMaxNum(list) {
     let big = -Infinity;
 
