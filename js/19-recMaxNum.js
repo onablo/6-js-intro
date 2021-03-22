@@ -1,13 +1,15 @@
 /*
-- rekursija? rasti didziausia skaiciu bet kokio gilumo sarase
-    - kas vyriausias gimineje?
-    - kas turi daugiausia vaiku gimineje
+Rasti didziausia skaiciu bet kokio sudetingumo array'juje
+
+Salygos:
+- visi array elementai yra: arba skaicius, arba array
+- visi skaiciaiai yra normalus
 */
 
 function recMaxNum(list) {
     let big = -Infinity;
 
-    for (let i = 1; i < list.length; i++) {
+    for (let i = 0; i < list.length; i++) {
         const num = list[i];
          
         if (Array.isArray(num))  {
@@ -22,7 +24,11 @@ function recMaxNum(list) {
                 big = num;
             }
         }      
+        if (num > big) {
+            big = num;
+        }
     }
+
     return big;
 }
 const data = [
