@@ -78,6 +78,8 @@ console.log(bigNum(['888', Infinity, null, 'sads', true]));
 
 console.log('---------------');
 
+
+
 /*function bigNum(list) {
     // input validation
     if (!Array.isArray(list)) {
