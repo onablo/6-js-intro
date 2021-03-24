@@ -51,8 +51,8 @@ console.log('----------------');
 
 // kompleksines reiksmes
 
-const cc = [4, 44];
-const dd = [8, 88];
+let cc = [4, 44];
+let dd = [8, 88];
 
 console.log(cc);
 console.log(dd);
