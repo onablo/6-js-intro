@@ -242,9 +242,72 @@ console.log(reducedPazymiai);
 console.log('------------');
 
 
+
 // koks gausis tekstas, jei sujungsime visu zodziu pirmas raides
 const dictionary2 = ['Labas', 'rytas', 'Lietuva', 'sakau', 'tau'];
 
 const short = dictionary2.reduce ((total, word) => total + word[0], '');
 
 console.log(short);
+
+
+console.log('------------');
+
+
+
+const sortList = [1, 5, 9, -7, -14, 0, 50];
+
+const sorted = sortList.sort();
+console.log(sorted);
+
+
+console.log('------------');
+
+
+
+const sortAbc = ['a', 'c', 'fabrikas', 'fancy', 'pomidoras', 'Ryga'];
+
+const sortedAbc = sortAbc.sort();
+console.log(sortedAbc);
+
+
+console.log('------------');
+
+
+
+const sortList1 = [ 1, 5, 78, 2, 11, -14, 0, -9];
+//console.log(sortList1.sort());
+//const sortedNumber = sortList1.sort((a, b) => a - b ? -1 : 1);
+//const sortedNumber = sortList1.sort((a, b) => a > b ? -1 : 1);
+//const sortedNumber = sortList1.sort((a, b) => a - b );
+
+const sortedNumber = sortList1.sort((a, b) => b - a);
+
+console.log(sortedNumber);
+console.log(sortList1);
+
+
+
+console.log('------------');
+
+
+
+const spread1 = ([5, 9, 3, -14]);
+console.log(spread1);
+
+// const spread2 = [5, 9, 7];
+const spread2 = [...spread1, 7, 77, 777];
+console.log(spread2);
+
+//  const spread3 = [7, 5, 9];
+const spread3 = [7, 77, 777, ...spread1];
+console.log(spread3);
+
+const spread4 = ['agd', 'gky', 951, true];
+console.log(spread4);
+
+const spread5 = [...spread4, ...spread1];
+console.log(spread5);
+
+const spread6 = [...spread1, ...spread4];
+console.log(spread6);
